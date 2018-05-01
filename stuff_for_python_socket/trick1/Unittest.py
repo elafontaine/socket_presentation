@@ -8,7 +8,7 @@ class MyTestCase(unittest.TestCase):
         self.server_socket = socket.socket()
         self.server_socket.settimeout(2)
         self.server_socket.bind(('localhost', 0))
-        self.server_socket.listen(65536)
+        self.server_socket.listen(10)
         self.client_socket = socket.socket()
 
     def tearDown(self):
