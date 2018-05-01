@@ -3,13 +3,11 @@ import socket
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server_socket.bind(("localhost", 15000))
-# we're going to reserve this port to start the server
+server_socket.bind(("localhost", 15000))# we're going to reserve this port to start the server
 
 # Do we see the socket on LISTEN yet? What about file descriptor?
 
-server_socket.listen(5)
-# max_number of concurent connection, this tells the OS (I'm ready to process incoming connections! :)
+server_socket.listen(5) # max_number of concurent connection
 
 # Do we see the socket on LISTEN yet?
 
